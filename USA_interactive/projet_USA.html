@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title> USA 2018 </title>
+    <link rel="icon" href="icones/map.png"/>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.js'></script>
+      <link href='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.css' rel='stylesheet' />
+    <link rel ="stylesheet" href="style.css" />
+    <script src="chemins_json.js"></script>
+  </head>
+
+<body>
+
+
+<div class = "menu">
+    <!-- Titre de la page web -->
+    <h1> Notre voyage aux USA </h1>
+    <img src="icones/Drapeau.png"/>
+
+</div>
+
+  <div class = "banner2">
+  </div>
+
+    <div class="main">
+      <div id="map" class="carte-interactive"></div>
+      <div id ="coordonnes">Coordonnées : Déplacez la souris sur la carte </div>
+
+      <div class="sidebar">
+
+    <!-- Explication  -->
+            <p class="explication">Cette carte interactive permet de retracer notre séjour en Californie </p>
+
+    <!-- Onglet de recherche  -->
+      <div class="recherche">
+          <select>
+            <option value="">-- Sélectionner l'étape du voyage qui vous intéresse --</option>
+            <option value="Losa">Los Angeles</option>
+            <option value="Sequ">Sequoia National Park</option>
+            <option value="Lasv">Las Vegas</option>
+            <option value="Bish">Bishop</option>
+            <option value="Squaw">Squaw Valley</option>
+            <option value="Sanf">San Francisco</option>
+          </select>
+      </div>
+
+    <!-- Mise en page d'un tableau  -->
+      <div class = "box">
+      <div class="infobox">
+            <p><i> Cliquez sur un <b> marqueur rouge </b> pour obtenir les informations correspondantes aux étapes du circuit.</i></p>
+            <p><i> Cliquez sur <b> les itinéraires </b> pour obtenir les distances. </i></p>
+      </div>
+      </div>
+
+
+
+      <!-- Copyright -->
+              <div class="copyright">
+                2018 © Ludivine Stofer
+              </div>
+
+
+
+
+      </div>
+
+     </div>
+
+
+  <div class = "footer">
+    <p> Ludivine Stofer | Tous droits réservés </p>
+  </div>
+
+
+<!-- Liaison avec un fichier JS et la carte -->
+  <script src="projet.js"></script>
+
+
+
+  </body>
+</html>

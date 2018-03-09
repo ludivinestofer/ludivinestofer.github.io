@@ -1,0 +1,175 @@
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.menu h1 {
+  color: #BF0A30;
+  float: left;
+  display: inline-block;
+  text-align: left;
+  font-size: 24pt;
+  position: center;
+  margin-left: 100px;
+  margin-top: 45px;
+}
+
+.menu img {
+  float: right;
+  display: inline-block;
+  height: 80px;
+  width: 110px;
+  position: absolute;
+  bottom: 20px;
+  left: 800px;
+  margin-left: 20%;
+}
+
+.banner2 {
+  display: block;
+  background-color: #BF0A30;
+  height: 30px;
+  width: 100%;
+}
+
+.main {
+  position: relative;
+}
+
+/*Position de la carte interactive */
+.carte-interactive {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 770px;
+  height: 500px;
+  background-color: #999;
+  border: 1px solid #003580;
+  margin-bottom: 50px;
+  margin-right: 0;
+}
+
+/* Barre de droite*/
+.sidebar{
+  position: absolute;
+  top: 0;
+  left: 770px;
+  width: 480px;
+  height: 470px;
+  background-color: #f0f0f0;
+  border: 1px solid #003580;
+  padding: 15px;
+}
+
+.explication{
+  margin-top: 0;
+  font-size: 9pt;
+}
+
+.recherche input {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+}
+
+/* Couleur du bouton recherche */
+.recherche button {
+  height: 30px;
+  width: 80px;
+  background-color: #008ccc;
+  color: #ffffff;
+  border: 2px solid #003580;
+  cursor: hand; cursor: pointer;
+}
+
+.recherche button:hover {
+  background-color: #003580;
+}
+
+/* Position du texte à droite */
+.infobox {
+  margin-top: 30pt;
+}
+
+table {
+  font-size:10pt;
+}
+td {
+  min-width: 80px;
+}
+a {
+  text-decoration: none;
+  color: #008ccc;
+}
+
+a:visited {
+  color: #008ccc;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #006aaa;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  font-size: 8pt;
+  margin-bottom: 10px;
+}
+
+.coordonnees {
+  position: absolute;
+  left:0;
+  top: 506px;
+  font-size: 11px;
+}
+
+.recherche select {
+  height: 28px;
+  width: 100%;
+  background-color: #fff;
+  border-color: #003580;
+}
+.recherche select:focus {
+  outline-color: #003580;
+}
+
+.box {
+  width: 430px;
+  height: 365px;
+  border: none;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  margin: 10px;
+  overflow: scroll;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  background-color: #BF0A30;
+  height: 40px;
+  width: 1300px;
+  top: 655px;
+  left:100;
+}
+
+.footer p {
+  color: #ffffff;
+  position: relative;
+  font-size: 8pt;
+
+}
