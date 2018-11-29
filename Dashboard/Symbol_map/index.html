@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Symbol Map</title>
+    <!-- Libraries -->
+    <!-- Module d3.js -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- Classybrew permettant de faire la mise en classe ainsi que le coloriage de la carte -->
+    <script src="https://cdn.rawgit.com/christiankaiser/classybrew/b8ca77d5a6b7eef5586f5148c36ee937aa1bacfb/build/classybrew.min.js"></script>
+
+    <!-- Link to .css -->
+    <link rel ="stylesheet" href="style.css" />
+
+
+
+  </head>
+  <body>
+
+    <!-- Main -->
+    <div id = "title">
+      <h1>Evolution de la population </h1>
+      <p id="year"></p>
+      <p id="aff"></p>
+
+    <!-- Creation of the frame of the map -->
+      <svg class="choropleth" width="800" height="600"></svg>
+
+      <!-- Barre de menu pour choisir l'année -->
+      <select id="yearSelect" onchange="changeYearEvent();">
+       <option value="">"-- Sélectionner l'année --"</option>
+       <option value="1991">1991</option>
+       <option value="1992">1992</option>
+       <option value="1993">1993</option>
+       <option value="1994">1994</option>
+       <option value="1995">1995</option>
+       <option value="1996">1996</option>
+       <option value="1997">1997</option>
+       <option value="1998">1998</option>
+       <option value="1999">1999</option>
+       <option value="2000">2000</option>
+       <option value="2001">2001</option>
+       <option value="2002">2002</option>
+       <option value="2003">2003</option>
+       <option value="2004">2004</option>
+       <option value="2005">2005</option>
+       <option value="2006">2006</option>
+       <option value="2007">2007</option>
+       <option value="2008">2008</option>
+       <option value="2009">2009</option>
+       <option value="2010">2010</option>
+       <option value="2011">2011</option>
+       <option value="2012">2012</option>
+       <option value="2013">2013</option>
+       <option value="2014">2014</option>
+       <option value="2015">2015</option>
+       <option value="2016">2016</option>
+      </select>
+
+
+      <!-- Footer -->
+      <div id = "footer">
+        <p> © Ludivine Stofer | Tous droits réservés </p>
+      </div>
+
+
+      <!-- Link to script .js -->
+      <script src="index.js"></script>
+
+      <!-- Run the script once everything is loaded -->
+      <script> APP.init(); </script>
+
+  </body>
+</html>
